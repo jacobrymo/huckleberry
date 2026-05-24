@@ -9,8 +9,6 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
-
 :root {
   --green-base: hsl(160deg, 100%, 30%);
   --gold-subtle: hsl(45deg, 100%, 50%);
@@ -65,10 +63,6 @@ main {
     font-size: var(--font-lg);
     margin-block: var(--space-16);
   }
-
-  @media screen and (min-width: 1024px) {}
-
-  @media screen and (min-width: 1024px) {}
 }
 
 .intro-chunk {
@@ -81,10 +75,6 @@ main {
   & strong {
     color: var(--green-base);
   }
-
-  @media screen and (min-width: 1024px) {}
-
-  @media screen and (min-width: 1024px) {}
 }
 
 .title {
