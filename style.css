@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -10,3 +10,105 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --green-base: hsl(160deg, 100%, 30%);
+  --gold-subtle: hsl(45deg, 100%, 50%);
+  --gold-bold: hsl(45deg, 100%, 40%);
+  --gray-boldest: hsl(0deg, 0%, 10%);
+  --gray-bold: hsl(0deg, 0%, 30%);
+  --gray-base: hsl(0deg, 0%, 40%);
+  --gray-subtle: hsl(0deg, 0%, 60%);
+  --black: hsl(0deg, 0%, 0%);
+  --white: hsl(0deg, 0%, 100%);
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-128: 128px;
+}
+
+body {
+  &>* {
+    padding-inline: var(--space-24);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  line-height: 120%;
+}
+
+main {
+  padding-block: var(--space-64);
+  border-block-start: 8px solid var(--gray-subtle);
+  background-color: var(--gray-base);
+}
+
+.max-width-wrapper {
+  max-width: 47rem;
+  margin-inline: auto;
+
+  & p {
+    font-size: var(--font-lg);
+    margin-block: var(--space-16);
+  }
+
+  @media screen and (min-width: 1024px) {}
+
+  @media screen and (min-width: 1024px) {}
+}
+
+.intro-chunk {
+  padding-block: var(--space-48);
+
+  & p {
+    max-width: 36ch;
+  }
+
+  & strong {
+    color: var(--green-base);
+  }
+
+  @media screen and (min-width: 1024px) {}
+
+  @media screen and (min-width: 1024px) {}
+}
+
+.title {
+  margin-block: var(--space-48);
+  font-size: var(--font-2xl);
+}
+
+.card {
+  background-color: var(--white);
+  margin-inline: calc(var(--space-24) * -1);
+  padding: var(--space-8) var(--space-24);
+  border-block-end: 8px solid var(--gray-subtle);
+}
+
+.indented-heading {
+  margin: 0;
+  margin-inline-start: calc(var(--space-32) * -1);
+  padding: var(--space-16) var(--space-32);
+  background-color: var(--gold-subtle);
+  width: fit-content;
+  border-block-end: var(--space-8) solid var(--gold-bold);
+
+  @media screen and (max-width: 30em) {
+    padding-block: calc(var(--space-24) * 0.5);
+    padding-inline-end: var(--space-24);
+  }
+}
